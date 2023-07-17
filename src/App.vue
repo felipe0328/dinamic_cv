@@ -5,8 +5,10 @@
   </nav>
   <router-view /> -->
   <div class="bkg">
-    <name-header @headerAppearCompleted="headerEnterEnded" />
-    <description :showDescription="headerEntryEnded" />
+    <div class="bkg-border">
+      <name-header @headerAppearCompleted="headerEnterEnded" />
+      <description :showDescription="headerEntryEnded" />
+    </div>
   </div>
 </template>
 
@@ -63,6 +65,12 @@ body {
   margin: 0;
   background-color: gray;
   height: 100vh;
+}
+
+.bkg-border {
+  margin: 5%;
+  height: 90%;
+  border-style: solid;
 }
 
 @font-face {

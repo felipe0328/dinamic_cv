@@ -27,6 +27,7 @@ export default {
   margin: auto;
   width: 100vw;
   font-size: 1.5em;
+  margin-top: 5%;
 }
 
 .pntransition-transition {
