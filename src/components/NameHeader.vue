@@ -36,4 +36,9 @@ export default {};
     transform: translate(0);
   }
 }
+
+.name-text {
+  font-family: "Xtradex";
+  color: rgb(0, 0, 0);
+}
 </style>

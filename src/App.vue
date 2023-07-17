@@ -51,4 +51,9 @@ body {
   background-color: gray;
   height: 100vh;
 }
+
+@font-face {
+  font-family: "Xtradex";
+  src: local("Xtradex"), url("./fonts/Xtradex.ttf") format("truetype");
+}
 </style>
