@@ -6,14 +6,17 @@
   <router-view /> -->
   <div class="bkg">
     <name-header />
+    <description />
   </div>
 </template>
 
 <script>
 import NameHeader from './components/NameHeader.vue'
+import Description from './components/Description.vue'
 export default {
   components: {
-    NameHeader
+    NameHeader,
+    Description
   }
 }
 </script>
