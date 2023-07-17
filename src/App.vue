@@ -1,10 +1,20 @@
 <template>
-  <nav>
+  <!-- <nav>
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
   </nav>
-  <router-view />
+  <router-view /> -->
+  <name-header />
 </template>
+
+<script>
+import NameHeader from "./components/NameHeader.vue";
+export default {
+  components: {
+    NameHeader,
+  },
+};
+</script>
 
 <style lang="scss">
 #app {
