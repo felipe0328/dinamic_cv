@@ -4,7 +4,7 @@
     appear-active-class="pntransition-transition"
     @after-appear="this.$emit('headerAppearCompleted')"
   >
-    <div class="profile-name">
+    <div class="d-flex justify-content-center">
       <h1 class="name-text">Oscar Felipe Puentes Sanguino</h1>
     </div>
   </transition>

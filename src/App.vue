@@ -34,21 +34,21 @@ export default {
 </script>
 
 <style lang="scss">
-body {
-  height: 100%;
-  margin: 0;
-}
+@import 'node_modules/bootstrap/scss/bootstrap';
 
 .bkg {
   position: fixed;
   margin: 0;
   background-color: gray;
   height: 100vh;
+  width: 100vw;
 }
 
 .bkg-border {
-  margin: 5%;
-  height: 90%;
+  margin-top: 5vh;
+  margin-left: 5vw;
+  height: 90vh;
+  width: 90vw;
   border-style: solid;
 }
 
@@ -62,6 +62,4 @@ body {
   src: local('AestheticRomance'),
     url('./fonts/AestheticRomance.ttf') format('truetype');
 }
-
-@import 'node_modules/bootstrap/scss/bootstrap';
 </style>
