@@ -1,5 +1,9 @@
 <template>
-  <transition appear appear-active-class="pntransition-transition">
+  <transition
+    appear
+    appear-active-class="pntransition-transition"
+    @after-appear="this.$emit('headerAppearCompleted')"
+  >
     <div class="profile-name">
       <h1 class="name-text">Oscar Felipe Puentes Sanguino</h1>
     </div>
@@ -7,7 +11,14 @@
 </template>
 
 <script>
-export default {}
+export default {
+  emits: ['headerAppearCompleted'],
+  methods: {
+    test() {
+      console.log('oli')
+    }
+  }
+}
 </script>
 
 <style>

@@ -5,8 +5,8 @@
   </nav>
   <router-view /> -->
   <div class="bkg">
-    <name-header />
-    <description />
+    <name-header @headerAppearCompleted="headerEnterEnded" />
+    <description :showDescription="headerEntryEnded" />
   </div>
 </template>
 
@@ -14,9 +14,19 @@
 import NameHeader from './components/NameHeader.vue'
 import Description from './components/Description.vue'
 export default {
+  data() {
+    return {
+      headerEntryEnded: false
+    }
+  },
   components: {
     NameHeader,
     Description
+  },
+  methods: {
+    headerEnterEnded() {
+      this.headerEntryEnded = true
+    }
   }
 }
 </script>
