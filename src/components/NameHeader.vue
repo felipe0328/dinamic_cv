@@ -4,7 +4,7 @@
     appear-active-class="pntransition-transition"
     @after-appear="this.$emit('headerAppearCompleted')"
   >
-    <div class="d-flex justify-content-center">
+    <div class="d-flex justify-content-center mt-3">
       <h1 class="name-text">Oscar Felipe Puentes Sanguino</h1>
     </div>
   </transition>
@@ -24,10 +24,8 @@ export default {
 <style>
 .profile-name {
   position: relative;
-  margin: auto;
   width: 100vw;
   font-size: 1.5em;
-  margin-top: 5%;
 }
 
 .pntransition-transition {
