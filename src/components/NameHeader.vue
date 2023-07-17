@@ -7,7 +7,7 @@
 </template>
 
 <script>
-export default {};
+export default {}
 </script>
 
 <style>
@@ -38,7 +38,7 @@ export default {};
 }
 
 .name-text {
-  font-family: "Xtradex";
+  font-family: 'AestheticRomance';
   color: rgb(0, 0, 0);
 }
 </style>

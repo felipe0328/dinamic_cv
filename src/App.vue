@@ -10,12 +10,12 @@
 </template>
 
 <script>
-import NameHeader from "./components/NameHeader.vue";
+import NameHeader from './components/NameHeader.vue'
 export default {
   components: {
-    NameHeader,
-  },
-};
+    NameHeader
+  }
+}
 </script>
 
 <style lang="scss">
@@ -53,7 +53,13 @@ body {
 }
 
 @font-face {
-  font-family: "Xtradex";
-  src: local("Xtradex"), url("./fonts/Xtradex.ttf") format("truetype");
+  font-family: 'Xtradex';
+  src: local('Xtradex'), url('./fonts/Xtradex.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'AestheticRomance';
+  src: local('AestheticRomance'),
+    url('./fonts/AestheticRomance.ttf') format('truetype');
 }
 </style>
