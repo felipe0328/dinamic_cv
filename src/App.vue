@@ -4,7 +4,9 @@
     <router-link to="/about">About</router-link>
   </nav>
   <router-view /> -->
-  <name-header />
+  <div class="bkg">
+    <name-header />
+  </div>
 </template>
 
 <script>
@@ -36,5 +38,17 @@ nav {
       color: #42b983;
     }
   }
+}
+
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.bkg {
+  position: fixed;
+  margin: 0;
+  background-color: gray;
+  height: 100vh;
 }
 </style>

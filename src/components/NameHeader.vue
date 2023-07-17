@@ -1,7 +1,7 @@
 <template>
   <transition appear appear-active-class="pntransition-transition">
     <div class="profile-name">
-      <h1>Oscar Felipe Puentes Sanguino</h1>
+      <h1 class="name-text">Oscar Felipe Puentes Sanguino</h1>
     </div>
   </transition>
 </template>
@@ -14,8 +14,8 @@ export default {};
 .profile-name {
   position: relative;
   margin: auto;
-  width: 50vw;
-  font-size: 1.8em;
+  width: 100vw;
+  font-size: 1.5em;
 }
 
 .pntransition-transition {
@@ -26,11 +26,11 @@ export default {};
 @keyframes appear-name {
   0% {
     opacity: 0;
-    transform: translateY(calc(50vh));
+    transform: translateY(calc(40vh));
   }
   30% {
     opacity: 1;
-    transform: translateY(calc(50vh));
+    transform: translateY(calc(40vh));
   }
   80% {
     transform: translate(0);
