@@ -10,7 +10,7 @@
         <name-header @headerAppearCompleted="headerEnterEnded" />
         <description :showDescription="headerEntryEnded" />
       </div>
-      <vertical-menu />
+      <vertical-menu :showMenu="headerEntryEnded" />
       <websites />
     </div>
   </div>
