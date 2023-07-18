@@ -8,6 +8,7 @@
     <div class="bkg-border">
       <name-header @headerAppearCompleted="headerEnterEnded" />
       <description :showDescription="headerEntryEnded" />
+      <websites />
     </div>
   </div>
 </template>
@@ -15,6 +16,8 @@
 <script>
 import NameHeader from './components/NameHeader.vue'
 import Description from './components/Description.vue'
+import Websites from './components/Websites.vue'
+
 export default {
   data() {
     return {
@@ -23,7 +26,8 @@ export default {
   },
   components: {
     NameHeader,
-    Description
+    Description,
+    Websites
   },
   methods: {
     headerEnterEnded() {
@@ -45,6 +49,7 @@ export default {
 }
 
 .bkg-border {
+  position: absolute;
   margin-top: 5vh;
   margin-left: 5vw;
   height: 90vh;
