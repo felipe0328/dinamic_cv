@@ -1,9 +1,20 @@
 <template>
-  <p>About Me</p>
+  <appearing-transition appear>
+    <div v-if="showContent">
+      <p>About Me</p>
+    </div>
+  </appearing-transition>
 </template>
 
 <script>
-export default {}
+import AppearingTransition from '@/components/AppearingTransition.vue'
+
+export default {
+  props: ['showContent'],
+  components: {
+    AppearingTransition
+  }
+}
 </script>
 
 <style></style>
