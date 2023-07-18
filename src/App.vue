@@ -5,11 +5,13 @@
         <name-header @headerAppearCompleted="headerEnterEnded" />
         <description :showDescription="headerEntryEnded" />
       </div>
-      <vertical-menu :showMenu="headerEntryEnded" />
-      <router-view
-        class="position-absolute top-50 start-50 translate-middle-y"
-        :showContent="headerEnterEnded"
-      />
+      <div>
+        <vertical-menu :showMenu="headerEntryEnded" />
+        <router-view
+          :showContent="headerEntryEnded"
+          class="position-absolute top-50 start-50 translate-middle-y"
+        />
+      </div>
       <websites />
     </div>
   </div>

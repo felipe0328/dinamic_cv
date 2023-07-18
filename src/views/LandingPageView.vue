@@ -1,9 +1,9 @@
 <template>
   <appearing-transition>
-    <div v-if="showContent">
+    <div v-if="showContent" class="container">
       <img
         alt="Vue logo"
-        src="../assets/code10.png"
+        src="../assets/software-engineer.png"
         class="rounded landing-logo"
       />
     </div>
@@ -12,6 +12,7 @@
 
 <script>
 import AppearingTransition from '@/components/AppearingTransition.vue'
+
 export default {
   props: ['showContent'],
   components: {
@@ -22,7 +23,7 @@ export default {
 
 <style>
 .landing-logo {
-  width: 30%;
-  height: 30%;
+  width: 50%;
+  margin-left: -20%;
 }
 </style>

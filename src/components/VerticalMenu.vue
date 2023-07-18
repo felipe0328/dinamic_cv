@@ -5,16 +5,16 @@
       v-if="showMenu"
     >
       <div class="row hover-effect">
-        <a>About Me</a>
+        <a href="/" class="btn-vertical-menu">Home</a>
       </div>
       <div class="row hover-effect">
-        <a>Projects</a>
+        <a href="/about-me" class="btn-vertical-menu">About Me</a>
       </div>
       <div class="row hover-effect">
-        <a>Option 3</a>
+        <a class="btn-vertical-menu">Projects</a>
       </div>
       <div class="row hover-effect">
-        <a>Contact</a>
+        <a class="btn-vertical-menu">Contact</a>
       </div>
     </div>
   </appearing-transition>
@@ -35,5 +35,10 @@ export default {
 .hover-effect:hover {
   margin-left: 20%;
   transform: scale(1.5);
+}
+
+.btn-vertical-menu {
+  text-decoration: none;
+  color: inherit;
 }
 </style>
