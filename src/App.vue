@@ -6,8 +6,11 @@
   <router-view /> -->
   <div class="bkg">
     <div class="bkg-border">
-      <name-header @headerAppearCompleted="headerEnterEnded" />
-      <description :showDescription="headerEntryEnded" />
+      <div>
+        <name-header @headerAppearCompleted="headerEnterEnded" />
+        <description :showDescription="headerEntryEnded" />
+      </div>
+      <vertical-menu />
       <websites />
     </div>
   </div>
@@ -17,6 +20,7 @@
 import NameHeader from './components/NameHeader.vue'
 import Description from './components/Description.vue'
 import Websites from './components/Websites.vue'
+import VerticalMenu from './components/VerticalMenu.vue'
 
 export default {
   data() {
@@ -27,6 +31,7 @@ export default {
   components: {
     NameHeader,
     Description,
+    VerticalMenu,
     Websites
   },
   methods: {
