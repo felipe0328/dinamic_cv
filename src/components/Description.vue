@@ -1,5 +1,5 @@
 <template>
-  <transition name="description">
+  <appearing-transition>
     <div
       v-if="showDescription"
       class="d-flex justify-content-center text-muted subtitle-header"
@@ -11,12 +11,15 @@
         >
       </p>
     </div>
-  </transition>
+  </appearing-transition>
 </template>
 
 <script>
+import AppearingTransition from './AppearingTransition.vue'
+
 export default {
   props: ['showDescription'],
+  components: { AppearingTransition },
   data() {
     return {}
   }
@@ -24,14 +27,6 @@ export default {
 </script>
 
 <style>
-.description-enter-from {
-  opacity: 0;
-}
-
-.description-enter-to {
-  transition: all 0.5s ease-in;
-}
-
 .subtitle-header {
   margin-top: -2%;
 }

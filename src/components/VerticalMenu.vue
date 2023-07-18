@@ -1,28 +1,33 @@
 <template>
-  <transition name="menu-transition">
+  <appearing-transition>
     <div
       class="container position-absolute top-50 translate-middle-y"
       v-if="showMenu"
     >
       <div class="row hover-effect">
-        <p>Option 1</p>
+        <a>About Me</a>
       </div>
       <div class="row hover-effect">
-        <p>Option 2</p>
+        <a>Projects</a>
       </div>
       <div class="row hover-effect">
-        <p>Option 3</p>
+        <a>Option 3</a>
       </div>
       <div class="row hover-effect">
-        <p>Option 4</p>
+        <a>Contact</a>
       </div>
     </div>
-  </transition>
+  </appearing-transition>
 </template>
 
 <script>
+import AppearingTransition from './AppearingTransition.vue'
+
 export default {
-  props: ['showMenu']
+  props: ['showMenu'],
+  components: {
+    AppearingTransition
+  }
 }
 </script>
 
@@ -30,13 +35,5 @@ export default {
 .hover-effect:hover {
   margin-left: 20%;
   transform: scale(1.5);
-}
-
-.menu-transition-enter-from {
-  opacity: 0;
-}
-
-.menu-transition-enter-to {
-  transition: all 0.5s ease-in;
 }
 </style>

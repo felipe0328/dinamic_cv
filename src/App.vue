@@ -1,9 +1,4 @@
 <template>
-  <!-- <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view /> -->
   <div class="bkg">
     <div class="bkg-border">
       <div>
@@ -11,6 +6,10 @@
         <description :showDescription="headerEntryEnded" />
       </div>
       <vertical-menu :showMenu="headerEntryEnded" />
+      <router-view
+        class="position-absolute top-50 start-50 translate-middle-y"
+        :showContent="headerEnterEnded"
+      />
       <websites />
     </div>
   </div>
