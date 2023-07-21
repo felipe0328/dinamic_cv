@@ -5,18 +5,20 @@
         <name-header @headerAppearCompleted="headerEnterEnded" />
         <description :showDescription="headerEntryEnded" />
       </div>
-      <div class="container mx-0 px-0">
-        <div class="row">
-          <div class="col-2">
+
+      <div class="container-fluid px-0">
+        <div class="row d-flex justify-content-start">
+          <div class="col d-flex align-self-start vertical-menu">
             <vertical-menu :showMenu="headerEntryEnded" />
           </div>
         </div>
-        <div class="row">
-          <div class="col-12">
+        <div class="row d-flex justify-content-center">
+          <div class="col max-width-col">
             <router-view :showContent="headerEntryEnded" />
           </div>
         </div>
       </div>
+
       <websites />
     </div>
   </div>
@@ -54,10 +56,9 @@ export default {
 <style lang="scss">
 @import 'node_modules/bootstrap/scss/bootstrap';
 
-* {
-  margin: 0;
-  padding: 0;
-  position: relative;
+.vertical-menu {
+  display: flex;
+  align-items: flex-start;
 }
 
 .bkg {
@@ -69,12 +70,18 @@ export default {
 }
 
 .bkg-border {
-  position: absolute;
+  position: relative;
   margin-top: 5vh;
   margin-left: 5vw;
   height: 90vh;
   width: 90vw;
   border-style: solid;
+}
+
+.max-width-col {
+  position: relative;
+  width: 100%;
+  height: 55vh;
 }
 
 @font-face {

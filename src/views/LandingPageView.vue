@@ -1,10 +1,15 @@
 <template>
   <appearing-transition appear>
-    <div v-if="showContent" class="container">
+    <div
+      v-if="showContent"
+      class="container d-flex justify-content-center max-width-col"
+    >
       <img
         alt="Vue logo"
         src="../assets/software-engineer.png"
-        class="rounded landing-logo"
+        class="rounded img-circle mx-auto"
+        width="640"
+        height="220"
       />
     </div>
   </appearing-transition>
@@ -21,9 +26,4 @@ export default {
 }
 </script>
 
-<style>
-.landing-logo {
-  width: 50%;
-  margin-left: -20%;
-}
-</style>
+<style></style>

@@ -33,6 +33,6 @@ export default {}
 
 .footer-icon {
   /* position: relative; */
-  font-size: 4vmax;
+  font-size: 3vmax;
 }
 </style>

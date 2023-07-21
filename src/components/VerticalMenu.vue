@@ -1,6 +1,6 @@
 <template>
   <appearing-transition>
-    <div class="container" v-if="showMenu">
+    <div class="container px-2 mx-0" v-if="showMenu">
       <div class="row hover-effect">
         <router-link to="/" class="btn-vertical-menu">Home</router-link>
       </div>

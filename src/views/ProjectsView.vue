@@ -1,6 +1,9 @@
 <template>
   <appearing-transition appear>
-    <div v-if="showContent">
+    <div
+      v-if="showContent"
+      class="container d-flex justify-content-center align-items-center max-width-col"
+    >
       <p>Projects</p>
     </div>
   </appearing-transition>
