@@ -1,9 +1,6 @@
 <template>
   <appearing-transition>
-    <div
-      class="container position-absolute top-50 translate-middle-y"
-      v-if="showMenu"
-    >
+    <div class="container" v-if="showMenu">
       <div class="row hover-effect">
         <router-link to="/" class="btn-vertical-menu">Home</router-link>
       </div>
@@ -44,12 +41,12 @@ export default {
 
 <style>
 .hover-effect:hover {
-  margin-left: 20%;
-  transform: scale(1.5);
+  font-weight: bold;
 }
 
 .btn-vertical-menu {
   text-decoration: none;
   color: inherit;
+  font-size: 14px;
 }
 </style>

@@ -2,9 +2,9 @@
   <appearing-transition>
     <div
       v-if="showDescription"
-      class="d-flex justify-content-center text-muted subtitle-header"
+      class="d-flex justify-content-center text-muted"
     >
-      <p>
+      <p class="subtitle-header">
         <small
           >Software Engineer | Microservices Development, Golang, Python,
           C#</small
@@ -28,6 +28,6 @@ export default {
 
 <style>
 .subtitle-header {
-  margin-top: -2%;
+  text-align: center;
 }
 </style>

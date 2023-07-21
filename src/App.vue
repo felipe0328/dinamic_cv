@@ -5,12 +5,15 @@
         <name-header @headerAppearCompleted="headerEnterEnded" />
         <description :showDescription="headerEntryEnded" />
       </div>
-      <div>
-        <vertical-menu :showMenu="headerEntryEnded" />
-        <router-view
-          :showContent="headerEntryEnded"
-          class="position-absolute top-50 start-50 translate-middle-y"
-        />
+      <div class="container mx-0 px-0">
+        <div class="row row-cols-1">
+          <div class="col-2">
+            <vertical-menu :showMenu="headerEntryEnded" />
+          </div>
+          <div class="col">
+            <router-view :showContent="headerEntryEnded" />
+          </div>
+        </div>
       </div>
       <websites />
     </div>
@@ -45,6 +48,12 @@ export default {
 
 <style lang="scss">
 @import 'node_modules/bootstrap/scss/bootstrap';
+
+* {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
 
 .bkg {
   position: fixed;

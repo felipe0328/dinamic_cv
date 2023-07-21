@@ -5,7 +5,7 @@
     @after-appear="this.$emit('headerAppearCompleted')"
   >
     <div class="d-flex justify-content-center mt-3">
-      <h1 class="name-text">Oscar Felipe Puentes Sanguino</h1>
+      <h1 class="name-text header-title">Oscar Felipe Puentes Sanguino</h1>
     </div>
   </transition>
 </template>
@@ -22,10 +22,8 @@ export default {
 </script>
 
 <style>
-.profile-name {
-  position: relative;
-  width: 100vw;
-  font-size: 1.5em;
+.header-title {
+  text-align: center;
 }
 
 .pntransition-transition {
