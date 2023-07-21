@@ -47,6 +47,6 @@ export default {
 .btn-vertical-menu {
   text-decoration: none;
   color: inherit;
-  font-size: 14px;
+  font-size: 2vmin;
 }
 </style>

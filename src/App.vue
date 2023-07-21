@@ -6,11 +6,13 @@
         <description :showDescription="headerEntryEnded" />
       </div>
       <div class="container mx-0 px-0">
-        <div class="row row-cols-1">
+        <div class="row">
           <div class="col-2">
             <vertical-menu :showMenu="headerEntryEnded" />
           </div>
-          <div class="col">
+        </div>
+        <div class="row">
+          <div class="col-12">
             <router-view :showContent="headerEntryEnded" />
           </div>
         </div>
@@ -31,6 +33,9 @@ export default {
     return {
       headerEntryEnded: false
     }
+  },
+  created() {
+    document.title = 'Oscar Puentes CV'
   },
   components: {
     NameHeader,

@@ -2,7 +2,7 @@
   <div class="footer">
     <a
       href="https://github.com/felipe0328"
-      class="btn p-0"
+      class="btn p-1"
       target="_blank"
       rel="noreferrer noopener"
     >
@@ -11,7 +11,7 @@
 
     <a
       href="https://www.linkedin.com/in/ofguino/"
-      class="btn p-0"
+      class="btn p-1"
       target="_blank"
       rel="noreferrer noopener"
     >
@@ -33,6 +33,6 @@ export default {}
 
 .footer-icon {
   /* position: relative; */
-  font-size: 2em;
+  font-size: 4vmax;
 }
 </style>
